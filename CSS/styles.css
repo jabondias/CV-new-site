@@ -1,0 +1,188 @@
+/*可在Chrome開發人員工具elements中修改觀察網頁變化, 找到合適的再複製codes下來*/
+/* https://www.cssfontstack.com/ */
+body {
+    /*margin-left: 0; when using 0px, no need to specify px*/
+    color: #40514E;
+    margin: 0;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-size: 120%;
+}
+
+hr {
+  border-style: none;
+  border-top-style: dotted;
+  border-color: #EAF6F6;
+  border-width: 6px;
+  width: 5%;
+  margin: 100px auto;
+}
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/margin */
+/* margin auto will center the element either vertically or horizontally, here left and right margin were set to centered*/
+/* Grab google font: https://fonts.google.com/?preview.text_type=custom&preview.text=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz */
+/* 16%= 100px=1 em 寫成%或是em是dynamic, user如果放大頁面顯示比例字體會跟著變大, 寫成px則不會*/
+/* 使用rem則不會繼承body裡font-size的設定, 如果使用em, 會繼承body裡font-size, 放大比例可能過大*/
+/* https://www.w3schools.com/cssref/pr_dim_line-height.asp */
+h1 {
+    font-size: 5.625rem; /*rem需緊跟在數字後不能有空格*/
+    color: #66BFBF;
+    margin: 50px auto 0 auto;
+    margin: 0 auto 0 auto ;
+    font-family: 'Sacramento', cursive;
+    line-height: 2;
+}
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight */
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  color: #66BFBF;
+  font-weight: normal;
+  padding-bottom: 10px;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #11999E;
+}
+
+a {
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+/* Review Bacon Fansite codes */
+/* Pseudo-classes with colon ":hover" , which is used to change color when the mouse hovers over it.*/
+a:hover {
+  color: #EAF6F6;
+
+}
+p {
+    line-height: 2;
+}
+/******************************************CLASS*******************************************************/
+/* https://www.freecodecamp.org/news/html-background-color-tutorial-how-to-change-a-div-background-color-explained-with-code-examples/*/
+.top-container {
+  background-color: #EAF6F6;
+  position:relative;
+  padding-top: 100px;
+}
+
+.self-intro{
+  color: #40514E;
+  width:30%;
+  margin: auto;
+}
+
+.top-cloud { /* top-cloud's parent is top container */
+  position: absolute;
+  right:700px;
+  top:50px;
+
+}
+
+.bottom-cloud { /* bottom-cloud's parent is top container */
+  position: absolute;
+  left:700px;
+  bottom: 400px;
+}
+/* https://www.w3schools.com/cssref/pr_font_weight.asp */
+
+/*.app {
+  text-decoration: solid underline red 4px;
+}*/
+
+/* float to make words wrap around image*/
+.lcms-img {
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
+
+.data-img {
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+
+}
+/* clear left means the left margin is clear*/
+/*.MS-description{
+  clear: left;
+}
+
+.data-skill-description{
+  clear:right;
+}
+*/
+
+.middle-container{
+  margin: 100px auto
+}
+
+/* CSS line-height Property */
+.skill-row {
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+  line-height: 2;
+}
+
+.bottom-container{
+  margin-top: 50px;
+  background-color: #66BFBF;
+  position:relative;
+  padding: 50px 0 20px;
+}
+
+.contact-msg {
+  width:40%;
+  margin: 40px auto 60px;
+}
+
+/* Generated from https://cssbuttoncreator.com/ or https://css3buttongenerator.com/ */
+.BUTTON_EXR {
+   background: #66BFBF;
+   background-image: -webkit-linear-gradient(top, #66BFBF, #199388);
+   background-image: -moz-linear-gradient(top, #66BFBF, #199388);
+   background-image: -ms-linear-gradient(top, #66BFBF, #199388);
+   background-image: -o-linear-gradient(top, #66BFBF, #199388);
+   background-image: -webkit-gradient(to bottom, #66BFBF, #199388);
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   color: #FFFFFF;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 40px;
+   font-weight: 100;
+   padding: 20px;
+   -webkit-box-shadow: 1px 1px 20px 0 #000000;
+   -moz-box-shadow: 1px 1px 20px 0 #000000;
+   box-shadow: 1px 1px 20px 0 #000000;
+   text-shadow: 1px 1px 20px #000000;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+}
+
+.BUTTON_EXR:hover {
+   border: solid #57A7A7 1px;
+   background: #57A7A7;
+   background-image: -webkit-linear-gradient(top, #57A7A7, #57A7A7);
+   background-image: -moz-linear-gradient(top, #57A7A7, #57A7A7);
+   background-image: -ms-linear-gradient(top, #57A7A7, #57A7A7);
+   background-image: -o-linear-gradient(top, #57A7A7, #57A7A7);
+   background-image: -webkit-gradient(to bottom, #57A7A7, #57A7A7);
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   text-decoration: none;
+}
+
+.copyright{
+  color: #EAF6F6;
+  font-size: 0.8rem;
+  padding: 20px 0;
+}
